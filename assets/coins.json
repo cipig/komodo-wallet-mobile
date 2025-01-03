@@ -1214,6 +1214,7 @@
     "coin": "AXE",
     "name": "axe",
     "fname": "Axe",
+    "sign_message_prefix": "DarkCoin Signed Message:\n",
     "rpcport": 9337,
     "pubtype": 55,
     "p2shtype": 16,
@@ -2283,26 +2284,6 @@
     "derivation_path": "m/44'/60'"
   },
   {
-    "coin": "BRZ-ERC20_OLD",
-    "name": "brz_erc20_old",
-    "fname": "Brazilian Digital Token (OLD)",
-    "rpcport": 80,
-    "mm2": 1,
-    "wallet_only": true,
-    "chain_id": 1,
-    "decimals": 4,
-    "avg_blocktime": 15,
-    "required_confirmations": 3,
-    "protocol": {
-      "type": "ERC20",
-      "protocol_data": {
-        "platform": "ETH",
-        "contract_address": "0x420412E765BFa6d85aaaC94b4f7b708C89be2e2B"
-      }
-    },
-    "derivation_path": "m/44'/60'"
-  },
-  {
     "coin": "BRZ-ERC20",
     "name": "brz_erc20",
     "fname": "Brazilian Digital Token",
@@ -2317,26 +2298,6 @@
       "protocol_data": {
         "platform": "ETH",
         "contract_address": "0x01d33FD36ec67c6Ada32cf36b31e88EE190B1839"
-      }
-    },
-    "derivation_path": "m/44'/60'"
-  },
-  {
-    "coin": "BRZ-PLG20_OLD",
-    "name": "brz_plg20_old",
-    "fname": "Brazilian Digital Token (OLD)",
-    "rpcport": 80,
-    "mm2": 1,
-    "wallet_only": true,
-    "chain_id": 137,
-    "decimals": 4,
-    "avg_blocktime": 1.8,
-    "required_confirmations": 20,
-    "protocol": {
-      "type": "ERC20",
-      "protocol_data": {
-        "platform": "MATIC",
-        "contract_address": "0x491a4eB4f1FC3BfF8E1d2FC856a6A46663aD556f"
       }
     },
     "derivation_path": "m/44'/60'"
@@ -2443,6 +2404,7 @@
 	"wiftype": 153,
 	"txfee": 0,
 	"segwit": true,
+	"bech32_hrp": "bc",
 	"mm2": 1,
 	"required_confirmations": 5,
 	"avg_blocktime": 30,
@@ -2783,25 +2745,6 @@
       "protocol_data": {
         "platform": "AVAX",
         "contract_address": "0x9C9e5fD8bbc25984B178FdCE6117Defa39d2db39"
-      }
-    },
-    "derivation_path": "m/44'/60'"
-  },
-  {
-    "coin": "BUSD-AVX20_OLD",
-    "name": "busd_avx20_old",
-    "fname": "Binance USD (OLD)",
-    "rpcport": 80,
-    "mm2": 1,
-    "chain_id": 43114,
-    "required_confirmations": 3,
-    "avg_blocktime": 2.4,
-    "decimals": 18,
-    "protocol": {
-      "type": "ERC20",
-      "protocol_data": {
-        "platform": "AVAX",
-        "contract_address": "0x19860CCB0A68fd4213aB9D8266F7bBf05A8dDe98"
       }
     },
     "derivation_path": "m/44'/60'"
@@ -4126,26 +4069,6 @@
       "protocol_data": {
         "platform": "ETH",
         "contract_address": "0x888888435FDe8e7d4c54cAb67f206e4199454c60"
-      }
-    },
-    "derivation_path": "m/44'/60'"
-  },
-  {
-    "coin": "DFX-PLG20_OLD",
-    "name": "dfx_plg20_old",
-    "fname": "DFX Finance (OLD)",
-    "rpcport": 80,
-    "mm2": 1,
-    "wallet_only": true,
-    "chain_id": 137,
-    "decimals": 18,
-    "avg_blocktime": 1.8,
-    "required_confirmations": 20,
-    "protocol": {
-      "type": "ERC20",
-      "protocol_data": {
-        "platform": "MATIC",
-        "contract_address": "0xE7804D91dfCDE7F776c90043E03eAa6Df87E6395"
       }
     },
     "derivation_path": "m/44'/60'"
@@ -6724,6 +6647,28 @@
     "derivation_path": "m/44'/60'"
   },
   {
+    "coin": "GURU-BEP20",
+    "name": "guru_bep20",
+    "fname": "MobilityGuru",
+    "rpcport": 80,
+    "mm2": 1,
+    "chain_id": 56,
+    "decimals": 18,
+    "avg_blocktime": 3,
+    "required_confirmations": 3,
+    "protocol": {
+      "type": "ERC20",
+      "protocol_data": {
+        "platform": "BNB",
+        "contract_address": "0xc166A8dd8e48355774ac95933f746b57A724A464"
+      }
+    },
+    "derivation_path": "m/44'/60'",
+    "links": {
+      "homepage": "https://mobilityguru.org"
+    }
+  },
+  {
     "coin": "GUSD-ERC20",
     "name": "gusd_erc20",
     "fname": "Gemini Dollar",
@@ -8277,23 +8222,6 @@
         "erc20_receiver_spend": 85000,
         "erc20_sender_refund": 85000
     }
-  },
-  {
-    "coin": "LABS",
-    "sign_message_prefix": "Komodo Signed Message:\n",
-    "asset": "LABS",
-    "fname": "KMD Labs",
-    "rpcport": 40265,
-    "txversion": 4,
-    "overwintered": 1,
-    "mm2": 1,
-    "required_confirmations": 5,
-    "avg_blocktime": 60,
-    "protocol": {
-      "type": "UTXO"
-    },
-    "derivation_path": "m/44'/141'",
-    "trezor_coin": "Komodo"
   },
   {
     "coin": "LBC",
@@ -11751,8 +11679,7 @@
     "p2shtype": 122,
     "wiftype": 128,
     "segwit": true,
-    "txfee": 1000000,
-    "dust": 1000000,
+    "txfee": 1100000,
     "mm2": 1,
     "required_confirmations": 3,
     "avg_blocktime": 60,
@@ -13139,25 +13066,6 @@
       "protocol_data": {
         "platform": "ETH",
         "contract_address": "0x2C537E5624e4af88A7ae4060C022609376C8D0EB"
-      }
-    },
-    "derivation_path": "m/44'/60'"
-  },
-  {
-    "coin": "TUSD-BEP20_OLD",
-    "name": "tusd_bep20_old",
-    "fname": "TrueUSD (OLD)",
-    "rpcport": 80,
-    "mm2": 1,
-    "wallet_only": true,
-    "chain_id": 56,
-    "avg_blocktime": 3,
-    "required_confirmations": 3,
-    "protocol": {
-      "type": "ERC20",
-      "protocol_data": {
-        "platform": "BNB",
-        "contract_address": "0x14016E85a25aeb13065688cAFB43044C2ef86784"
       }
     },
     "derivation_path": "m/44'/60'"
@@ -16388,23 +16296,6 @@
     }
   },
   {
-    "coin": "USBL",
-    "name": "bitdollar",
-    "fname": "Balanced Dollar",
-    "confpath": "USERHOME/.bitdollar/bitdollar.conf",
-    "rpcport": 35573,
-    "pubtype": 65,
-    "p2shtype": 66,
-    "wiftype": 193,
-    "txfee": 0,
-    "mm2": 1,
-    "required_confirmations": 2,
-    "avg_blocktime": 150,
-    "protocol": {
-      "type": "UTXO"
-    }
-  },
-  {
     "coin": "USDF",
     "fname": "Fake USD",
     "is_testnet": true,
@@ -16481,6 +16372,7 @@
     "coin": "XEC",
     "name": "xec",
     "fname": "eCash",
+    "sign_message_prefix": "eCash Signed Message:\n",
     "rpcport": 8332,
     "pubtype": 0,
     "p2shtype": 5,
@@ -16500,7 +16392,11 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/1899'"
+    "derivation_path": "m/44'/1899'",
+    "links": {
+      "github": "https://github.com/Bitcoin-ABC/bitcoin-abc",
+      "homepage": "https://e.cash"
+    }
   },
   {
     "coin": "SIBM-BEP20",
